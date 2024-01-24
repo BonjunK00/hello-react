@@ -16,6 +16,16 @@ type DateObject = {
   date: number
 }
 
+/*
+  Todo
+  1. selectedDate를 이용해서 defaultWeekRows를 지우고 제대로 된 weekRows를 만들기
+  2. 월 이동 버튼 클릭 시 정상적으로 연월이 바뀌게 구현하기
+  3. 날짜를 클릭하면 selectedDate가 바뀌게 구현하기
+  3. 선택된 날짜에 색상을 입혀서 표시하기
+  4. 오늘 날짜에 색상을 입혀서 표시하기
+  5. 달력 컴포넌트를 공용 컴포넌트(Calendar.tsx)로 분리하기
+*/
+
 export const NhanNha = () => {
   const today = new Date()
 
