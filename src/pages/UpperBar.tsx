@@ -1,6 +1,13 @@
 import { Link, Outlet } from 'react-router-dom'
+import { useIsLogInStore } from '../store/store'
 
 export const UpperBar = () => {
+  const { isLogIn, setIsLogIn } = useIsLogInStore()
+
+  const handleClickLogOut = () => {
+    setIsLogIn(false)
+  }
+
   return (
     <div className="flex flex-col">
       <div className="flex items-center px-[50px] bg-[#F7FBFC] h-[70px]">
@@ -15,9 +22,15 @@ export const UpperBar = () => {
             뇽뇽
           </Link>
         </div>
-        <Link className="flex-2  hover:text-blue-500 p-[3px]" to="/login">
-          로그인
-        </Link>
+        {isLogIn ? (
+          <button className="flex-2  hover:text-blue-500 p-[3px]" onClick={handleClickLogOut}>
+            로그아웃
+          </button>
+        ) : (
+          <Link className="flex-2  hover:text-blue-500 p-[3px]" to="/login">
+            로그인
+          </Link>
+        )}
       </div>
       <Outlet />
     </div>
