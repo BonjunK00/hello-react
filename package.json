@@ -2,6 +2,7 @@
   "name": "hello-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bonjunk00.github.io/hello-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -27,7 +28,6 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bonjunk00.github.io/hello-react/",
   "eslintConfig": {
     "extends": [
       "react-app",
