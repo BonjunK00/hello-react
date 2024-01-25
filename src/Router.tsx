@@ -7,7 +7,7 @@ import { Login } from './pages/login/Login'
 
 export const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://bonjunk00.github.io/hello-react">
       <Routes>
         <Route path="/" element={<UpperBar />}>
           <Route path="/" element={<Home />} />

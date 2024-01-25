@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bonjunk00.github.io/hello-react/",
+  "homepage": "https://bonjunk00.github.io/hello-react",
   "eslintConfig": {
     "extends": [
       "react-app",
