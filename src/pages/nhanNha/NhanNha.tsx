@@ -44,6 +44,10 @@ export const NhanNha = () => {
     setSelectedDate({ year: selectedDate.year, month: selectedDate.month + 1, date: 1 })
   }
 
+  const handleClickColor = () => {
+    // 클릭시 날짜 색이 변하도록
+  }
+
   // selectedDay 값을 이용해서 defaultWeekRows를 지우고 제대로 된weekRows를 만들어보세요!
   const weekRows = defaultWeekRows
 
